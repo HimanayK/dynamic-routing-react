@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* Reset & basic setup */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container centered using Flexbox */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Vertical center */
+  align-items: center;       /* Horizontal center */
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Heading */
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Blog list */
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-list li {
+  margin: 1rem 0;
+}
+
+/* Blog links */
+.blog-link {
+  color: #6fa8ff;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  padding: 0.3rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.blog-link:hover {
+  background-color: #6fa8ff;
+  color: #1e1e1e;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #6fa8ff;
+}
+
+.blog-detail {
+  height: 100vh;       /* Fill full height */
+  width: 100vw;        /* Fill full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Vertical center */
+  align-items: center;      /* Horizontal center */
+  text-align: center;
+  padding: 1rem;
+}
+
+.blog-detail h2 {
+  font-size: 2rem;
+  color: #6fa8ff;
+  margin-bottom: 1rem;
+}
+
+.blog-detail p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  color: #e0e0e0;
+}
